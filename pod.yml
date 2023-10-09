@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nodeapp
+  labels:
+    app: nodeapp
+spec:
+  containers:
+    - name: nodeapp
+      image: rsamantaaws/springboot-docker-aws-ecs:0.0.1-SNAPSHOT
+      ports:
+        - containerPort: 8080
